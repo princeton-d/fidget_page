@@ -1,7 +1,9 @@
+import { toggleDisplay } from "./main.js";
 'use strict';
 // DOM
-const morseCodeArea = document.querySelector('.morse-code-area')
-const morseInputForm = document.querySelector('.morse-input-form');
+const contentsArea = document.querySelector('.contents-area')
+export const morseCodeArea = document.querySelector('.morse-code-area')
+// const morseInputForm = document.querySelector('.morse-input-form');
 const morseCodeBox = document.querySelector('.morse-code-box');
 const morseInputArea = document.querySelector('.morse-input-area');
 const morseOutputArea = document.querySelector('.morse-output-area');

@@ -1,6 +1,7 @@
+import { toggleDisplay } from "./main.js";
 'use strict';
 // DOM
-const instakilogramArea = document.querySelector('.instakilogram-area');
+export const instakilogramArea = document.querySelector('.instakilogram-area');
 const instakilogramBox = document.querySelector('.instakilogram-box')
 const instakilogramLoginBox = document.querySelector('.instakilogram-login-box')
 const instakilogramLoginForm = document.querySelector('.instakilogram-login-form');
@@ -10,16 +11,17 @@ const instakilogramLoginButton = document.querySelector('.instakilogram-login-bu
 const loginErrorText = document.querySelector('.login-error-text');
 const savedId = document.querySelector('.saved-id');
 
+const contentsArea = document.querySelector('.contents-area')
 const instaContents = document.querySelector('.insta-contents')
 const hartButton = document.querySelectorAll('.hart-button');
 const commentButton = document.querySelector('.comment-button');
-const telegramButton = document.querySelector('.telegram-button');
+export const telegramButton = document.querySelector('.telegram-button');
 const bookmarkButton = document.querySelector('.bookmark-button');
 const detailViewText = document.querySelector('.detail-view-text');
 const instaContentsText = document.querySelector('.insta-contents-text');
 const likeCount = document.querySelector('.like-count');
 const instaCommentArea = document.querySelector('.insta-comment-area');
-const instaComment = document.querySelector('.insta-comment')
+// const instaComment = document.querySelector('.insta-comment')
 const instaContentsCommentForm = document.querySelector('.insta-contents__comment-form'); // 댓글입력 form
 const instaContentsCommentInput = document.querySelector('.insta-contents__comment-input'); // 댓글입력 input
 

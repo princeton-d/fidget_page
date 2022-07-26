@@ -1,10 +1,14 @@
+import { morseCodeArea } from "./morse_code.js";
+import { removeTetris } from "./tetris.js";
+import { instakilogramArea } from "./instakilogram.js";
+import { worldCupArea } from "./ideal_world_cup.js";
 'use strict';
 // DOM
 const contentsArea = document.querySelector('.contents-area')
 const welcomePageForm = document.querySelector('.welcome-page');
 const welcomePageInput = document.querySelector('.welcome-page__input');
 const menuBox = document.querySelector('.menu-box');
-const gate = document.querySelector('.open-gate')
+// const gate = document.querySelector('.open-gate')
 const cursor = document.querySelector('.cursor')
 // setting
 // variables
@@ -23,10 +27,11 @@ function resetContent(e) { // 컨텐츠 바깥영역을 클릭하면 모든 컨�
     removeTetris()
     toggleDisplay(calculatorArea, 'none')
     toggleDisplay(instakilogramArea, 'none')
+    toggleDisplay(worldCupArea, 'none')
     toggleDisplay(contentsArea, 'none');
   }
 }
-function toggleDisplay(target, state) { // display 컨트롤
+export function toggleDisplay(target, state) { // display 컨트롤
   target.style.display = state;
 }
 function makeCursorText(cursorText) { // 커서 텍스트를 화면에 보여줌

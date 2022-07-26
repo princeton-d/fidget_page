@@ -1,14 +1,16 @@
+import { toggleDisplay } from "./main.js";
 'use strict';
 // DOM
+const contentsArea = document.querySelector('.contents-area')
 const tetrisBox = document.querySelector('.tetris-box')
-const tetrisArea = document.querySelector('.tetris-area')
+export const tetrisArea = document.querySelector('.tetris-area')
 const playground = document.querySelector('.playground > ul')
 const gameText = document.querySelector('.game-text')
 const restartButton = document.querySelector('.game-text > button')
 
 // setting
 const GAME_ROWS = 10;
-const GAME_COLS = 10;
+// const GAME_COLS = 10;
 
 // variables
 let score = 0;
@@ -185,7 +187,7 @@ function showHameOverText() {
   clearInterval(downInterval);
   gameText.style.display = 'flex'
 }
-function removeTetris() {
+export function removeTetris() {
   playground.innerHTML = '';
   clearInterval(downInterval);
   toggleDisplay(tetrisArea, 'none')

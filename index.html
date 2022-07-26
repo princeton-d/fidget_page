@@ -6,11 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>fidget page</title>
   <link rel="stylesheet" href="assets/css/style.css">
-  <script defer src="assets/js/main.js"></script>
-  <script defer src="assets/js/morse_code.js"></script>
-  <script defer src="assets/js/tetris.js"></script>
+  <script defer type="module" src="assets/js/main.js"></script>
+  <script defer type="module" src="assets/js/morse_code.js"></script>
+  <script defer type="module" src="assets/js/tetris.js"></script>
   <script defer src="assets/js/calculator.js"></script>
-  <script defer src="assets/js/instakilogram.js"></script>
+  <script defer type="module" src="assets/js/instakilogram.js"></script>
+  <script defer type="module" src="assets/js/ideal_world_cup.js"></script>
   <script src="https://kit.fontawesome.com/465b8b0b8e.js" crossorigin="anonymous"></script>
 </head>
 
@@ -37,7 +38,10 @@
         <p class="instakilogram-box__text box-text">instakilogram</p>
         <i class="fa-solid fa-globe box-icon"></i>
       </div>
-      <div class="contents-box"></div>
+      <div class="ideal-world-cup-box contents-box">
+        <p class="ideal-world-cup-box__text box-text">ideal world cup</p>
+        <i class="fa-solid fa-trophy box-icon"></i>
+      </div>
       <div class="contents-box"></div>
       <div class="contents-box"></div>
       <div class="contents-box"></div>
@@ -208,6 +212,25 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      <div class="ideal-world-cup-area">
+        <div class="wrapper">
+          <div class="world-cup-start-page">
+            <i class="fa-solid fa-trophy"></i>
+            <p>개발자 선물</p>
+            <input class="ideal-world-cup-start-button" type="button" value="시작하기">
+          </div>
+        </div>
+        <div class="Select-area">
+          <div class="select-items">
+            <div class="left-item"></div>
+            <div class="right-item"></div>
+          </div>
+          <div class="process-box">
+            개발자 선물 32강 1/16
+          </div>
+          <span class="versus"></span>
         </div>
       </div>
     </section>
