@@ -26,6 +26,7 @@ const selectPictures = []; // 이상형으로 선택된 사진들
 function openWorldCupArea() { // 이상형월드컵 디스플레이 노출
   toggleDisplay(contentsArea, 'flex');
   toggleDisplay(worldCupArea, 'flex');
+  toggleDisplay(worldCupStartPage, 'flex');
 }
 
 function startWorldCup() { // 이상형월드컵 시작
@@ -122,7 +123,8 @@ export function removeWorldCup() {
   pictures.length = 0;
   selectPictures.length = 0;
   toggleDisplay(SelectArea, 'none');
-  toggleDisplay(worldCupStartPage, 'flex');
+  toggleDisplay(worldCupStartPage, 'none');
+  toggleDisplay(worldCupArea, 'none');
 }
 // event handling
 worldCupBox.addEventListener('click', openWorldCupArea); // 이상형월드컵 디스플레이 노출

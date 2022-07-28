@@ -1,14 +1,13 @@
 import { morseCodeArea } from "./morse_code.js";
 import { removeTetris } from "./tetris.js";
 import { instakilogramArea } from "./instakilogram.js";
-import { worldCupArea, removeWorldCup } from "./ideal_world_cup.js";
+import { removeWorldCup } from "./ideal_world_cup.js";
 'use strict';
 // DOM
 const contentsArea = document.querySelector('.contents-area')
 const welcomePageForm = document.querySelector('.welcome-page');
 const welcomePageInput = document.querySelector('.welcome-page__input');
 const menuBox = document.querySelector('.menu-box');
-// const gate = document.querySelector('.open-gate')
 const cursor = document.querySelector('.cursor')
 // setting
 // variables
