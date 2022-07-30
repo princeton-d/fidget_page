@@ -12,10 +12,29 @@
   <script defer src="assets/js/calculator.js"></script>
   <script defer type="module" src="assets/js/instakilogram.js"></script>
   <script defer type="module" src="assets/js/ideal_world_cup.js"></script>
+  <script defer type="module" src="assets/js/js_quiz.js"></script>
   <script src="https://kit.fontawesome.com/465b8b0b8e.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+  <div class="ja-quiz-area">
+    <div class="wrapper">
+      <div class="question-area">
+        <p class="question-text"></p>
+      </div>
+      <div class="quiz-answer-area">
+        <div class="quiz-answer-input">
+          <input class="" type="text" placeholder="정답을 입력해주세요.">
+        </div>
+        <div class="quiz-answer-button">
+          <button class="quiz-answer"></button>
+          <button class="quiz-answer"></button>
+          <button class="quiz-answer"></button>
+          <button class="quiz-answer"></button>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="wrap">
     <div class="open-gate"></div>
     <form class="welcome-page">
@@ -23,29 +42,23 @@
     </form>
     <section class="menu-box">
       <div class="morse-code-box contents-box">
-        <p class="morse-code-box__text box-text">morse code</p>
         <i class="fa-brands fa-hashnode box-icon"></i>
       </div>
       <div class="tetris-box contents-box">
-        <p class="tetris-box__text box-text">tetris</p>
         <i class="fa-solid fa-cubes-stacked box-icon"></i>
       </div>
       <div class="calculator-box contents-box">
-        <p class="calculator-box__text box-text">calculator</p>
         <i class="fa-solid fa-calculator box-icon"></i>
       </div>
       <div class="instakilogram-box contents-box">
-        <p class="instakilogram-box__text box-text">instakilogram</p>
         <i class="fa-solid fa-globe box-icon"></i>
       </div>
       <div class="ideal-world-cup-box contents-box">
-        <p class="ideal-world-cup-box__text box-text">ideal world cup</p>
         <i class="fa-solid fa-trophy box-icon"></i>
       </div>
-      <div class="contents-box"></div>
-      <div class="contents-box"></div>
-      <div class="contents-box"></div>
-      <div class="contents-box"></div>
+      <div class="js-quiz-box contents-box">
+        <i class="fa-solid fa-question box-icon"></i>
+      </div>
     </section>
     <section class="contents-area">
       <div class="morse-code-area">

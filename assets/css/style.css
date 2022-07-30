@@ -99,8 +99,8 @@ body::-webkit-scrollbar {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 26vw;
-  height: 25vh;
+  width: 30vw;
+  height: 45vh;
   border-radius: 20px;
   text-align: center;
   background-color: floralwhite;
@@ -109,10 +109,6 @@ body::-webkit-scrollbar {
 
 .contents-box:hover {
   transform: scale(1.1);
-}
-
-.box-text {
-  font-size: 2vh;
 }
 
 .box-icon {
@@ -902,3 +898,5 @@ body::-webkit-scrollbar {
   font-weight: 700;
   background-color: wheat;
 }
+
+/* js-quiz */
