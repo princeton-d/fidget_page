@@ -3,7 +3,7 @@
   padding: 0;
   outline: 0;
   box-sizing: border-box;
-  cursor: none;
+  /* cursor: none; */
 }
 
 ul {
@@ -900,3 +900,33 @@ body::-webkit-scrollbar {
 }
 
 /* js-quiz */
+.ja-quiz-area {
+  display: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); */
+  width: 60vw;
+  height: 60vh;
+  border-radius: 20px;
+  background-color: antiquewhite;
+  animation: blur 0.4s alternate ease-in;
+  overflow: hidden;
+}
+
+.question-area {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.quiz-answer-area {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.quiz-answer-input {
+  width: 80%;
+}
