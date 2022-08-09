@@ -900,7 +900,7 @@ body::-webkit-scrollbar {
 }
 
 /* js-quiz */
-.ja-quiz-area {
+.js-quiz-area {
   display: none;
   display: flex;
   align-items: center;
