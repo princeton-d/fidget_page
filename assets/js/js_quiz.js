@@ -17,9 +17,9 @@ const questionText = document.querySelector('.question-text')
 const leftButtonArea = document.querySelector('.quiz-left-button')
 const rightButtonArea = document.querySelector('.quiz-right-button')
 // setting
-let QUIZCOUNTER = 0;
-let ANSWERCOUNT = 0; // 맞게 입력한 정답의 수
-const QUIZLENGTH = Object.keys(quiz).length; // 퀴즈의 총 문항 수
+let QUIZ_COUNTER = 0;
+let ANSWER_COUNT = 0; // 맞게 입력한 정답의 수
+const QUIZ_LENGTH = Object.keys(quiz).length; // 퀴즈의 총 문항 수
 // variables
 // function
 class QuizTemplates {
@@ -40,14 +40,14 @@ function render() { // 화면에 문제를 출력함
   const Quiz = makeQuizClass()
   questionText.innerHTML = Quiz.question; // 문제 text 입력
   quizDescription.innerHTML = Quiz.description; // 해설 text 입력
-  quizAnswer.innerHTML = `정답: ${Quiz.answer}`
-  quizScore.innerHTML = `score: ${ANSWERCOUNT}`; // score 출력
-  quizRound.innerHTML = `Round: ${QUIZCOUNTER}/${QUIZLENGTH}` // Round 출력
+  quizAnswer.innerHTML = `정답: ${Quiz.answer}` // 해설창에 정답 안내 출력
+  quizScore.innerHTML = `score: ${ANSWER_COUNT}`; // score 출력
+  quizRound.innerHTML = `Round: ${QUIZ_COUNTER}/${QUIZ_LENGTH}` // Round 출력
   checkAnswerButton(Quiz) // 해당 문제의 버튼에 정답버튼 여부 정하기
 }
 function makeQuizClass() { // 다음 번호의 quiz class 생성
-  QUIZCOUNTER++;
-  const Quiz = new QuizTemplates(quiz[QUIZCOUNTER]);
+  QUIZ_COUNTER++;
+  const Quiz = new QuizTemplates(quiz[QUIZ_COUNTER]);
   return Quiz;
 }
 function checkAnswerButton(quiz) { // 해당 문제의 버튼에 정답버튼 여부 정하기
@@ -60,7 +60,7 @@ function checkAnswerButton(quiz) { // 해당 문제의 버튼에 정답버튼 �
   rightButtonArea.innerHTML = rightButton;
 }
 function handleAnswerButton(e) { // 클릭한 버튼에 quiz-answer class가 있으면 정답
-  e.target.classList.contains('quiz-answer') ? ANSWERCOUNT++ : '';
+  e.target.classList.contains('quiz-answer') ? ANSWER_COUNT++ : '';
   printDescription() // 해설화면 출력
 }
 function printDescription() { // 문제 숨기고 설명 출력
@@ -76,8 +76,8 @@ function hideDescription() { // 설명을 숨기고 다음문제 출력
 removeQuiz()
 export function removeQuiz() {
   toggleDisplay(jsQuizArea, 'none'); // 퀴즈 컨텐츠 display: none -> flex
-  QUIZCOUNTER = 0;
-  ANSWERCOUNT = 0;
+  QUIZ_COUNTER = 0;
+  ANSWER_COUNT = 0;
 }
 // event handling
 jsQuizBox.addEventListener('click', openQuizArea); // 퀴즈 박스 클릭 -> 퀴즈 컨텐츠 노출
