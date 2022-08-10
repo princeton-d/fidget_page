@@ -2,6 +2,7 @@ import { morseCodeArea } from "./morse_code.js";
 import { removeTetris } from "./tetris.js";
 import { instakilogramArea } from "./instakilogram.js";
 import { removeWorldCup } from "./ideal_world_cup.js";
+import { removeQuiz } from "./js_quiz.js";
 'use strict';
 // DOM
 const contentsArea = document.querySelector('.contents-area')
@@ -27,6 +28,7 @@ function resetContent(e) { // 컨텐츠 바깥영역을 클릭하면 모든 컨�
     toggleDisplay(calculatorArea, 'none')
     toggleDisplay(instakilogramArea, 'none')
     removeWorldCup()
+    removeQuiz()
     toggleDisplay(contentsArea, 'none');
   }
 }
