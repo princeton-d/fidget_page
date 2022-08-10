@@ -1,5 +1,9 @@
 # fidget_page
 
+### update note
+
+https://websteak.notion.site/fidget-page-update-note-cdc84daaa8b34a1bac5a8db374e32968
+
 ### mouse targeting
 
 ![mouse_enter](https://user-images.githubusercontent.com/98032384/183827195-6030f655-e20b-4d88-995c-e559958c52aa.gif)
@@ -29,7 +33,3 @@ DOM요소 자체에 이벤트를 주어 간단하게 계산기 기능 구현
 ![6-1 worldcup_1](https://user-images.githubusercontent.com/98032384/183828372-22be4c02-2eac-4687-988d-6bced3070bc3.gif)
 ![6  worldcup_2](https://user-images.githubusercontent.com/98032384/183828386-65236994-e012-4443-bdc3-cac10ca40bec.gif)
 항상 랜덤하게 섞은 대진표와 선택을 할 수록 다른 결과를 보여줘야 하는 유동적인 페이지를 만들고싶어 이상형 월드컵이 적절해보여서 만듦
-
-### update note
-
-https://websteak.notion.site/fidget-page-update-note-cdc84daaa8b34a1bac5a8db374e32968
