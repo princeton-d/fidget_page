@@ -69,9 +69,18 @@ function printDescription() { // 문제 숨기고 설명 출력
 
 }
 function hideDescription() { // 설명을 숨기고 다음문제 출력
-  toggleDisplay(questionArea, 'block')
+  let count = QUIZ_COUNTER;
+  if (count !== 20) {
+    toggleDisplay(questionArea, 'block')
+    toggleDisplay(quizDescriptionArea, 'none')
+    render()
+  } else {
+    printScore()
+    console.log('game end')
+  }
+}
+function printScore() {
   toggleDisplay(quizDescriptionArea, 'none')
-  render()
 }
 removeQuiz()
 export function removeQuiz() {
@@ -79,6 +88,7 @@ export function removeQuiz() {
   QUIZ_COUNTER = 0;
   ANSWER_COUNT = 0;
 }
+
 // event handling
 jsQuizBox.addEventListener('click', openQuizArea); // 퀴즈 박스 클릭 -> 퀴즈 컨텐츠 노출
 leftButtonArea.addEventListener('click', handleAnswerButton);
